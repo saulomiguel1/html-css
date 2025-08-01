@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;    
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            text-decoration: underline;
+        }
+
+        .principal {
+            background-color: rgb(219, 125, 125);
+        }
+
+        .principal::before {
+            content: '✏ ';
+        }
+
+        .principal::after {
+            content: ' ☑';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalisando Links</h1>
+    <li><a href="https://www.youtube.com/@rebanhoff5031" target="_blank" rel="external">Canal do Youtube</a></li>
+    <li><a href="https://www.instagram.com/saul0migu3l/" class="principal">Perfil do Instagram</a></li>
+    <li><a href="https://www.tiktok.com/@saulo.miguel007" target="_blank" rel="external">Perfil do Tiktok</a></li>
+</body>
+</html>
