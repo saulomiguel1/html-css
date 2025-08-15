@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Notas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            background-color: gray;
+            border: 1px solid black;
+            color: white;
+            font-weight: bold;
+            font-size: 1.3em;
+            padding: 10px;
+            text-decoration: underline;
+        }
+        
+        td,th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead {
+            background-color: gray;
+            color: white;
+        }
+
+        .estilo  {
+            text-align: left;
+            background-color: gray;
+            color: white; 
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        #num1, #num2 {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            EDUCANDÁRIO SÃO FRANCISCO DE ASSIS
+        </caption>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
+                <td class="num">10.0</td>
+                <td class="num">8.7</td>
+                <td class="num">9.3</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="num">7.5</td>
+                <td class="num">8.2</td>
+                <td class="num">7.8</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="num">7.0</td>
+                <td class="num">6.5</td>
+                <td class="num">6.7</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="num">10.0</td>
+                <td class="num">9.8</td>
+                <td class="num">9.9</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="estilo" scope="row">Média de Exatas</th>
+                <td class="estilo" id="num2"><strong>8.5</strong></td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td class="num">9.0</td>
+                <td class="num">6.3</td>
+                <td class="num">7.6</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="num">8.0</td>
+                <td class="num">7.2</td>
+                <td class="num">7.6</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="estilo" scope="row">Média de Humanas</th>
+                <td class="estilo" id="num1"><strong>7.6</strong></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
